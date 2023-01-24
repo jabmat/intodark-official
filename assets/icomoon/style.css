@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?sy4i4x');
-  src:  url('fonts/icomoon.eot?sy4i4x#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?sy4i4x') format('truetype'),
-    url('fonts/icomoon.woff?sy4i4x') format('woff'),
-    url('fonts/icomoon.svg?sy4i4x#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?afdcrc');
+  src:  url('fonts/icomoon.eot?afdcrc#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?afdcrc') format('truetype'),
+    url('fonts/icomoon.woff?afdcrc') format('woff'),
+    url('fonts/icomoon.svg?afdcrc#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -44,4 +44,10 @@
 .icon-bandcamp:before {
   content: "\e904";
   color: #408294;
+}
+.icon-play3:before {
+  content: "\ea1c";
+}
+.icon-pause2:before {
+  content: "\ea1d";
 }
