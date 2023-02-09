@@ -118,7 +118,7 @@ main {
 .noescape-cover {
 	width: 100%;
 	/* move main-image top on header */
-	margin-top: -75px;
+	margin-top: -300px;
 }
 
 .noescape-cover img {
@@ -165,7 +165,26 @@ a.mail-contact {
 
 /* ---footer--- */
 
-/* Media Query for Mobile Devices */
+/* Media Query scalling main-image -> */
+@media (max-width: 1900px) {
+	.noescape-cover {
+		margin-top: -220px;
+	}
+}
+@media (max-width: 1400px) {
+	.noescape-cover {
+		margin-top: -170px;
+	}
+}
+@media (max-width: 1000px) {
+	.noescape-cover {
+		margin-top: -80px;
+	}
+}
+
+/* <- Media Query scalling main-image */
+
+/* Media Query for Mobile Devices -> */
 @media (max-width: 520px) {
 	.header-top {
 		justify-content: center;
@@ -187,3 +206,4 @@ a.mail-contact {
 		font-size: 16px;
 	}
 }
+/* <- Media Query for Mobile Devices */
