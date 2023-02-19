@@ -18,7 +18,7 @@ header {
 	z-index: 1;
 }
 
-.header-title h1 {
+h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 24px;
@@ -106,6 +106,17 @@ a.header-link:link {
 a.header-link:hover {
 	transform: scale(1.1, 1.1);
 }
+
+.entry-content a {
+	color: #cdcdcd;
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+.entry-content a:hover {
+	text-decoration: underline;
+}
+
 /* ---header--- */
 
 /* ---main--- */
@@ -131,10 +142,61 @@ main {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 20px;
-	margin: 20px 0px 40px;
+	margin: 20px auto 40px;
 }
 
 /* ---main--- */
+
+/* hell-diary */
+
+.hell-diary {
+	max-width: 1440px;
+	width: 100%;
+}
+
+.hell-diary h1 {
+	margin: 0 0 10px 240px;
+}
+
+.diary-wrapper {
+	margin: 0px 240px 0px;
+	border: 2px solid;
+	background-image: url(./images/id-hell-diary-page3.webp);
+}
+
+.entry-date {
+	font-family: 'Inconsolata', monospace;
+	font-weight: 600;
+	font-size: 20px;
+	display: inline-block;
+	color: #000;
+	opacity: 0.9;
+	margin: 20px 0px 0px 20px;
+}
+
+.entry-attach {
+	margin: 10px 20px 0;
+}
+
+.entry-attach img {
+	display: block;
+	width: 100%;
+}
+
+.entry-attach iframe {
+	width: 100%;
+	max-width: 560px;
+}
+
+.entry-content {
+	font-family: 'Inconsolata', monospace;
+	font-weight: 500;
+	font-size: 20px;
+	margin: 10px 20px 20px;
+	color: #000;
+	opacity: 0.95;
+}
+/* hell-diary */
 
 /* ---footer--- */
 
@@ -144,7 +206,7 @@ footer {
 	align-items: center;
 	gap: 5px;
 	margin-top: auto;
-	padding: 25px 0px;
+	padding: 75px 0px 25px;
 }
 
 a.mail-contact {
@@ -175,11 +237,31 @@ a.mail-contact {
 	.noescape-cover {
 		margin-top: -170px;
 	}
+	/* diary width for Nest devices */
+	.diary-wrapper {
+		margin: 0px 160px 0px;
+	}
+
+	.hell-diary h1 {
+		margin: 0 0 10px 160px;
+	}
+	/* diary width for Nest devices */
 }
+
 @media (max-width: 1000px) {
 	.noescape-cover {
 		margin-top: -80px;
 	}
+
+	/* diary width for tablets */
+	.diary-wrapper {
+		margin: 0px 60px 0px;
+	}
+
+	.hell-diary h1 {
+		margin: 0 0 10px 60px;
+	}
+	/* diary width for tablets */
 }
 
 /* <- Media Query scalling main-image */
@@ -205,5 +287,29 @@ a.mail-contact {
 	.image-quote {
 		font-size: 16px;
 	}
+
+	/* diary width for mobile */
+	.diary-wrapper {
+		margin: 0px 20px 0px;
+	}
+
+	.hell-diary h1 {
+		margin: 0 0 10px 20px;
+	}
+	/* diary width for mobile */
 }
+
+/* galaxy fold */
+@media (max-width: 320px) {
+	.diary-wrapper {
+		margin: 0px 15px 0px;
+	}
+
+	.entry-date,
+	.entry-content,
+	.image-quote {
+		font-size: 14px;
+	}
+}
+/* galaxy fold */
 /* <- Media Query for Mobile Devices */
