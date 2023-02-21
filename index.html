@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Into Dark Official</title>
+    <meta name="description" content="The Official Into Dark website">
+
+    <title>Into Dark</title>
+    <link rel="icon" type="image/webp" href="./images/favicon-cropp-32x32.webp" sizes="32x32">
+    <link rel="icon" type="image/webp" href="./images/favicon-cropp-48x48.webp" sizes="48x48">
+    <link rel="icon" type="image/webp" href="./images/favicon-cropp-196x196.webp" sizes="196x196">
+    <!-- apple touch icon? see ghost-official -->
+
     <link rel="stylesheet" href="assets/icomoon/style.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +20,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Montserrat:wght@400;700&display=swap"
         rel="stylesheet">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -21,13 +29,15 @@
         <!-- zmieniać klasę obrazka/ikony -->
         <!-- <div class="header-wrapper"> -->
         <div class="header-top">
-            <button class="play-button" type="button">
+            <button id="play-button" class="play-button" type="button" aria-label="play music button"
+                onclick="playMusic()">
                 <!-- (Play Button) -->
-                <i class="icon-play3 icon-play"></i>
+                <i id="play-icon" class="icon-play3 icon-play"></i>
+                <audio id="audio" src="./audio/id-playbtn-song1.mp3" loop></audio>
             </button>
             <a class="header-logo-anchor" href="./index.html">
-
-                <img class="header-logo" src="./images/id-logo-white.webp" alt="Logo of the black metal band Into Dark">
+                <img class="header-logo" src="./images/id-logo-white.webp" width="150" height="88"
+                    alt="Logo of the black metal band Into Dark">
             </a>
         </div>
 
@@ -38,19 +48,24 @@
         <!-- zamienić imgs na <i> z klasą iconmoon oraz dodać klasę od wielkości fontu do wyświetlenia -->
         <div class="header-icons">
             <a class="header-link"
-                href="https://open.spotify.com/artist/50rAhktQ7N9PqCJc7gEI0h?si=VfYSl7QJTryUbbyt3t_ldw" target="_blank">
+                href="https://open.spotify.com/artist/50rAhktQ7N9PqCJc7gEI0h?si=VfYSl7QJTryUbbyt3t_ldw" target="_blank"
+                aria-label="visit into dark Spotify">
                 <i class="icon-spotify icon-social"></i>
             </a>
-            <a class="header-link" href="https://intodark.bandcamp.com/releases" target="_blank">
+            <a class="header-link" href="https://intodark.bandcamp.com/releases" target="_blank"
+                aria-label="visit into dark bandcamp">
                 <i class="icon-bandcamp icon-social"></i>
             </a>
-            <a class="header-link" href="https://www.youtube.com/@intodark2552/featured" target="_blank">
+            <a class="header-link" href="https://www.youtube.com/@intodark2552/featured" target="_blank"
+                aria-label="visit into dark youtube channel">
                 <i class="icon-youtube icon-social"></i>
             </a>
-            <a class="header-link" href="https://www.instagram.com/intothenope/" target="_blank">
+            <a class="header-link" href="https://www.instagram.com/intothenope/" target="_blank"
+                aria-label="visit into dark instagram">
                 <i class="icon-instagram icon-social"></i>
             </a>
-            <a class="header-link" href="https://www.facebook.com/intodarkofficial" target="_blank">
+            <a class="header-link" href="https://www.facebook.com/intodarkofficial" target="_blank"
+                aria-label="visit into dark official facebook">
                 <i class="icon-facebook icon-social"></i>
             </a>
         </div>
@@ -59,13 +74,13 @@
 
     <main>
         <picture class="noescape-cover">
-            <source media="(max-width:520px)" srcset="./images/id-cover-no-logo.webp" width="800" height="817"
+            <source media="(max-width:520px)" srcset="./images/id-cover-no-logo.webp 800w"
                 alt="Cover for latest album of the black metal band Into Dark">
-            <source media="(min-width:521px)" srcset="./images/id-cover-no-logo-desktop.webp" width="5308" height="4308"
-                alt="Cover for latest album of the black metal band Into Dark">
+            <source media="(min-width:521px)" srcset="./images/id-cover-no-logo-desktop.webp 5308w"
+                alt="Cover for latest album of the black metal band Into Dark" loading="eager">
 
             <img src="./images/id-cover-no-logo-desktop.webp" width="5308" height="4308"
-                alt="Cover for latest album of the black metal band Into Dark" loading="lazy">
+                alt="Cover for latest album of the black metal band Into Dark" loading="eager">
         </picture>
         <span class="image-quote">
             - I hold you in the dark (I, Glance)
@@ -97,7 +112,8 @@
                     <div class="entry-attach">
                         <picture>
                             <source srcset="./images/id-image-entry.webp" alt="image shows entry content">
-                            <img src="./images/id-image-entry.webp" alt="image shows entry content" loading="lazy">
+                            <img src="./images/id-image-entry.webp" width="1642" height="1481"
+                                alt="image shows entry content" loading="lazy">
                         </picture>
                     </div>
                     <p class="entry-content">
