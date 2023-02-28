@@ -91,7 +91,7 @@
             <div class="diary-wrapper">
 
                 <!-- diary entries newest -->
-                <article class="diary-entry">
+                <article>
                     <span class="entry-date">
                         March 9th, 2023, <em>entry 7</em>
                     </span>
@@ -109,12 +109,11 @@
                         <picture>
                             <source srcset="./images/id-image-entry6.webp"
                                 alt="image shows 'I, Glance' album cover by Into Dark">
-                            <img src="./images/id-image-entry6.webp" width="1000" height="1021"
+                            <img class="attach-img" src="./images/id-image-entry6.webp" width="1000" height="1021"
                                 alt="image shows 'I, Glance' album cover by Into Dark" loading="lazy">
                         </picture>
                     </div>
                 </article>
-                <br>
 
                 <article>
                     <span class="entry-date">
@@ -128,7 +127,6 @@
                         Conveyor.
                     </p>
                 </article>
-                <br>
 
                 <article>
                     <span class="entry-date">
@@ -141,9 +139,8 @@
                             target="_blank">look</a>.
                     </p>
                 </article>
-                <br>
 
-                <article class="diary-entry">
+                <article>
                     <span class="entry-date">
                         November 15th, 2017, <em>entry 4</em>
                     </span>
@@ -156,7 +153,6 @@
                             target="_blank">wydarzenia</a>.
                     </p>
                 </article>
-                <br>
 
                 <article>
                     <span class="entry-date">
@@ -176,14 +172,13 @@
                         <picture>
                             <source srcset="./images/id-image-entry3.webp"
                                 alt="image shows 'I, Glance' album cover by Into Dark">
-                            <img src="./images/id-image-entry3.webp" width="1000" height="902"
+                            <img class="attach-img" src="./images/id-image-entry3.webp" width="1000" height="902"
                                 alt="image shows 'Tone.Death.Memories' album cover by Into Dark" loading="lazy">
                         </picture>
                     </div>
                 </article>
-                <br>
 
-                <article class="diary-entry">
+                <article>
                     <span class="entry-date">
                         August 17th, 2017, <em>entry 2</em>
                     </span>
@@ -191,15 +186,14 @@
                         Fourth track "Ruthless Particle of Being" from our debut LP.
                     </p>
                     <div class="entry-attach">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rtNhnGMhANs"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        <div id="yt-placeholder" class="youtube-placeholder" onclick="loadYT()">
+                            <img src="https://img.youtube.com/vi/rtNhnGMhANs/sddefault.jpg" width="560" height="315">
+                            <i class="icon-youtube"></i>
+                        </div>
                     </div>
                 </article>
-                <br>
 
-                <article class="diary-entry">
+                <article>
                     <span class="entry-date">
                         February 18th, 2017, <em>entry 1</em>
                     </span>
