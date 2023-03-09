@@ -201,6 +201,11 @@ main {
 	opacity: 0.95;
 }
 
+.content-container {
+	display: flex;
+	gap: 15px;
+}
+
 .youtube-placeholder {
 	position: relative;
 	display: inline-flex;
@@ -290,6 +295,12 @@ a.mail-contact {
 
 	.image-quote {
 		font-size: 16px;
+	}
+}
+
+@media (max-width: 819px) {
+	.content-container {
+		flex-direction: column;
 	}
 }
 
